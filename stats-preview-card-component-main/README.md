@@ -13,10 +13,10 @@ Users should be able to:
 ### Screenshot
 
 - Desktop Preview
-![Design preview for the Stats preview card component coding challenge](./images/screenshoot/Screenshot_2025-01-12_20-47-20.png)
+![Design preview for the Stats preview card component coding challenge](./images/screenshot/Screenshot_2025-01-12_20-47-20.png)
 
 - Mobile Preview
-![Design preview for the Stats preview card component coding challenge](./images/screenshoot/Screen Shot 2025-01-12 at 20.48.12.png)
+![Design preview for the Stats preview card component coding challenge](./images/screenshot/Screenshot_2025-01-12_at_20.48.12.png)
 
 ### Links
 
