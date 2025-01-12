@@ -1,0 +1,166 @@
+:root {
+	/* Background Colors */
+  	--background-very-dark: hsl(233, 47%, 7%);
+  	--background-dark: hsl(244, 38%, 16%);
+
+  	/* Accent Colors */
+  	--accent-violet: hsl(277, 64%, 61%);
+
+  	/* Neutral Colors */
+  	--white: hsl(0, 0%, 100%);
+  	--white-translucent-200: hsla(0, 0%, 100%, 0.75);
+  	--white-translucent-100: hsla(0, 0%, 100%, 0.6);
+
+	/* Font Size */
+  	--font-size: 0.938rem;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+ 	margin: 0;
+  	padding: 0;
+  	border: 0;
+}
+
+html {
+  	line-height: 1.5;
+  	font-size: 100%;
+}
+
+body {
+  	background-color: var(--background-very-dark);
+  	font-family: Inter, sans-serif;
+  	font-size: var(--font-size);
+  	color: var(--white-translucent-100);
+}
+
+a {
+  	text-decoration: none;
+  	color: inherit;
+}
+
+#business-stats-card {
+	max-width: 100%;
+  	margin: 5.5rem 1.5rem 1.5rem 1.5rem;
+	border-radius: 0 0 .5rem .5rem;
+  	background-color: var(--background-dark);
+  	display: flex;
+    flex-direction: column;
+}
+
+#business-stats-card p {
+	font-family: Lexend Deca, sans-serif;
+}
+
+.header {
+	position: relative;
+  	display: inline-block;
+}
+
+.header-image {
+	display: block;
+	width: 100%;
+  	border-radius: .5rem .5rem 0 0;
+}
+
+.header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(277, 64%, 61%, 0.3);
+	pointer-events: none;
+}
+
+.content {
+	padding: 3rem 2rem;
+	text-align: center;
+}
+
+.title {
+	font-size: 28px;
+	color: var(--white);
+	line-height: 1.25;
+	margin-bottom: 1.5rem;
+}
+
+.highlight {
+	color: var(--accent-violet);
+}
+
+.description {
+	margin-bottom: 2.5rem;
+}
+
+.stat-item:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
+.stat-value {
+	font-size: 1.5rem;
+	color: var(--white);
+}
+
+.stat-label {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+.attribution {
+	text-align: center;
+	font-size: 11px; 
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 376px) {
+	#business-stats-card {
+		margin-right: 9rem;
+		margin-left: 9rem;
+		border-radius: .5rem 0 0 .5rem;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	.header-image {
+		width: 33rem;
+	  	height: 100%;
+	  	border-radius: 0 .5rem .5rem 0;
+	}
+
+	.content {
+		height: 100%;
+		padding: 5rem 4.5rem;
+		margin-right: 2rem;
+		text-align: start;
+	}
+
+	.title {
+		font-size: 2rem;
+		letter-spacing: 2px;
+		margin-bottom: 2rem;
+	}
+
+	.description {
+		width: 90%;
+		font-size: 14px;
+		margin-bottom: 3.5rem;
+	}
+
+	.stats-container {
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.stat-item:not(:last-child) {
+		margin-bottom: 0;
+	}
+}
