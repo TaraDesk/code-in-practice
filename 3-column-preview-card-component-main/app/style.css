@@ -1,0 +1,164 @@
+:root {
+  	/* Accent Colors */
+  	--bright-orange: hsl(31, 77%, 52%);
+  	--dark-cyan: hsl(184, 100%, 22%);
+  	--very-dark-cyan: hsl(179, 100%, 13%);
+
+  	/* Neutral Colors */
+  	--white: hsla(0, 0%, 100%, 0.75);
+  	--light-gray: hsl(0, 0%, 95%);
+
+	/* Font Size */
+  	--font-size: 0.938rem;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+ 	margin: 0;
+  	padding: 0;
+  	border: 0;
+}
+
+html {
+  	line-height: 1.5;
+  	font-size: 100%;
+  	font-family: Lexend Deca, sans-serif;
+}
+
+body {
+	font-size: var(--font-size);
+	background-color: var(--light-gray);
+}
+
+a {
+  	text-decoration: none;
+  	color: inherit;
+}
+
+.card {
+	margin: 5.5rem 1.5rem;
+}
+
+section {
+	padding: 3rem;
+}
+
+.icon {
+	margin-bottom: 2.5rem;
+}
+
+.title {
+	font-family: Big Shoulders Display, sans-serif;
+	font-weight: bold;
+	font-size: 2.625rem;
+	line-height: 1.0;
+	text-transform: uppercase;
+
+	color: var(--light-gray);
+	margin-bottom: 2.25rem;
+}
+
+section p {
+	color: var(--white);
+	margin-bottom: 1.75rem;
+}
+
+.btn {
+	background-color: var(--light-gray);
+	padding: 1rem 1.75rem;
+	border-radius: 2rem;
+}
+
+.btn:hover {
+	background-color: transparent;
+	padding: 0.875rem 1.625rem;
+	border: solid 0.125rem var(--light-gray);
+	cursor: pointer;
+}
+
+/* Sedan Section */
+#sedan-section {
+	background-color: var(--bright-orange);
+	border-radius: 0.75rem 0.75rem 0 0;
+}
+
+#sedan-section .btn {
+	color: var(--bright-orange);
+}
+
+#sedan-section .btn:hover {
+	color: var(--light-gray);
+}
+
+/* Suv Section */
+#suv-section {
+	background-color: var(--dark-cyan);
+}
+
+#suv-section .btn {
+	color: var(--dark-cyan);
+}
+
+#suv-section .btn:hover {
+	color: var(--light-gray);
+}
+
+/* Luxury Section */
+#luxury-section {
+	background-color: var(--very-dark-cyan);
+	border-radius: 0 0 0.75rem 0.75rem;
+}
+
+#luxury-section .btn {
+	color: var(--very-dark-cyan);
+}
+
+#luxury-section .btn:hover {
+	color: var(--light-gray);
+}
+
+/* Attribution Section */
+.attribution {
+	text-align: center;
+	font-size: 0.688rem; 
+  	color: var(--very-dark-cyan);
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 376px) {
+	body {
+		display: flex;
+		height: 100vh;
+		width: 100vw;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card {
+		display: flex;
+		margin: auto;
+	}
+
+	section {
+		width: 19.188rem;
+	}
+
+	section p {
+		margin-bottom: 4.875rem;
+	}
+
+	#sedan-section {
+		border-radius: 0.5rem 0 0 0.5rem;
+	}
+
+	#luxury-section {
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
+}

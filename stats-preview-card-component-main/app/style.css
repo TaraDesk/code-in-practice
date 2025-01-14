@@ -83,7 +83,7 @@ a {
 }
 
 .title {
-	font-size: 28px;
+	font-size: 1.75rem;
 	color: var(--white);
 	line-height: 1.25;
 	margin-bottom: 1.5rem;
@@ -113,7 +113,7 @@ a {
 
 .attribution {
 	text-align: center;
-	font-size: 11px; 
+	font-size: 0.688rem; 
 }
 
 .attribution a { 
@@ -121,9 +121,18 @@ a {
 }
 
 @media (min-width: 376px) {
+	body {
+		display: flex;
+		height: 100vh;
+		width: 100vw;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 	#business-stats-card {
-		margin-right: 9rem;
-		margin-left: 9rem;
+		width: 67.375rem;
+		margin: auto;
 		border-radius: .5rem 0 0 .5rem;
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -150,7 +159,7 @@ a {
 
 	.description {
 		width: 90%;
-		font-size: 14px;
+		font-size: 0.875rem;
 		margin-bottom: 3.5rem;
 	}
 
