@@ -1,0 +1,102 @@
+:root {
+	/* 	Colors */
+  	--white: hsl(0, 0%, 100%);
+	--slate-300: hsl(212, 45%, 89%);
+	--slate-500: hsl(216, 15%, 48%);
+	--slate-900: hsl(218, 44%, 22%);
+
+	/* Font Size */
+  	--font-size: 15px;
+  	--title: 24px;
+
+  	--padding: 16px;
+  	--margin: 26px;
+  	--gap: 20px;
+  	--radius: 12px;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+ 	margin: 0;
+  	padding: 0;
+  	border: 0;
+}
+
+html {
+  	line-height: 1.5;
+  	font-size: 100%;
+  	font-family: Outfit, sans-serif;
+}
+
+body {
+	font-size: var(--font-size);
+	background-color: var(--slate-300);
+}
+
+a {
+  	text-decoration: none;
+  	color: inherit;
+}
+
+.main {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	max-width: 318px;
+	margin: var(--margin) auto;
+	background-color: var(--white);
+	border-radius: var(--radius);
+}
+
+.content {
+	padding: var(--padding);
+	text-align: center;
+}
+
+.card-image {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.card-content {
+	padding: 0 6px;
+	margin-top: var(--gap);
+}
+
+.card-content h3 {
+	line-height: 1.2;
+	font-size: var(--title);
+	font-weight: bold;
+	color: var(--slate-900);
+}
+
+.card-content p {
+	padding: 0 6px;
+	margin: var(--gap) auto;
+	color: var(--slate-500);
+}
+
+/* Attribution Section */
+.attribution {
+	text-align: center;
+	font-size: 0.688rem; 
+  	color: var(--very-dark-cyan);
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 376px) {
+	.card {
+		margin-top: auto;
+	}
+}

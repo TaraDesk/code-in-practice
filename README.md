@@ -10,4 +10,7 @@ Below is a list of the challenges I’ve completed along with their completion d
 
 - **[Challenge 1: Stats Preview Card Component](#)** — Completed on **January 12, 2025**
 - **[Challenge 2: 3 Column Preview Card Component](#)** — Completed on **January 14, 2025**
-- **[Challenge 3: Order Summary Preview Card Component](#)** — Completed on **January 15, 2025**
+- **[Challenge 3: Order Summary Component](#)** — Completed on **January 15, 2025**
+- **[Challenge 4: QR Code Component](#)** — Completed on **January 15, 2025**
+- **[Challenge 5: NFT Preview Card Component](#)** — Completed on **January 18, 2025**
+- **[Challenge 6: Product Preview Card Component](#)** — Completed on **January 19, 2025**
