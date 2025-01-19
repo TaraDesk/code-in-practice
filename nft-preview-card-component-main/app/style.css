@@ -10,7 +10,7 @@
 	--white: hsl(0, 0%, 100%);
 
 	/* Font Size */
-  	--font-size: 18px;
+  	--font-size: 1.125rem;
 
 	/* Font Weight */
   	--font-light: 300;
@@ -61,11 +61,11 @@ a {
 }
 
 .card {
-	max-width: 324px;
+	max-width: 20.25rem;
 	margin-bottom: 0.5rem;
-	padding: 22px;
-	gap: 24px;
-	border-radius: 12px;
+	padding: 1.375rem;
+	gap: 1.5rem;
+	border-radius: 0.75rem;
 
 	background-color: var(--veryDarkBlue-200);
 }
@@ -80,7 +80,7 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: hsla(178, 100%, 50%, .5); /* Dark semi-transparent background */
+	background: hsla(178, 100%, 50%, .5);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -90,8 +90,8 @@ a {
 }
 
 .overlay img {
-	width: 48px;
-	height: 48px;
+	width: 3rem;
+	height: 3rem;
 }
 
 .card-image:hover .overlay {
@@ -110,9 +110,9 @@ a {
 }
 
 .card-title {
-	font-size: 22px;
+	font-size: 1.375rem;
 	font-weight: var(--font-semibold);
-	line-height: 24px;
+	line-height: 1.5rem;
 	color: var(--white);
 
 	transition: all 300ms ease-in-out;
@@ -139,8 +139,8 @@ a {
 }
 
 .card-price img {
-	width: 11px;
-	height: 17px;
+	width: 0.688rem;
+	height: 1.063rem;
 }
 
 .card-price span {
@@ -149,12 +149,12 @@ a {
 }
 
 .card-timer {
-	gap: 4px;
+	gap: 0.25rem;
 }
 
 .card-timer img {
-	width: 17px;
-	height: 17px;
+	width: 1.063rem;
+	height: 1.063rem;
 }
 
 .card-timer span {
@@ -163,7 +163,7 @@ a {
 }
 
 .card-divider {
-	height: 2px;
+	height: 0.125rem;
 	background-color: var(--veryDarkBlue-300);
 }
 
@@ -173,14 +173,14 @@ a {
 }
 
 .creator-avatar {
-	width: 34px;
-	height: 34px;
+	width: 2.125rem;
+	height: 2.125rem;
 	border-radius: 50%;
-	border: solid 1px var(--white);
+	border: solid 0.063rem var(--white);
 }
 
 .creator-info {
-	font-size: 15px;
+	font-size: 0.938rem;
 	line-height: 1.5;
 	color: var(--softBlue);
 }
@@ -208,27 +208,27 @@ a {
 
 @media (min-width: 376px) {
 	.card {
-		max-width: 349px;
+		max-width: 21.813rem;
 		margin-bottom: 0;
-		padding: 24px;
-		gap: 24px;
+		padding: 1.5rem;
+		gap: 1.5rem;
 	}
 
 	.card-content {
-		gap: 22px;
+		gap: 1.375rem;
 	}
 
 	.card-description {
-		font-size: 18px;
+		font-size: 1.125rem;
 		line-height: 1.5;
 		color: var(--softBlue);
 	}
 
 	.card-timer {
-		gap: 8px;
+		gap: 0.5rem;
 	}
 
 	.creator-info {
-		font-size: 16px;
+		font-size: 1rem;
 	}	
 }

@@ -6,13 +6,13 @@
 	--slate-900: hsl(218, 44%, 22%);
 
 	/* Font Size */
-  	--font-size: 15px;
-  	--title: 24px;
+  	--font-size: 0.938rem;
+  	--title: 1.5rem;
 
-  	--padding: 16px;
-  	--margin: 26px;
-  	--gap: 20px;
-  	--radius: 12px;
+  	--padding: 1rem;
+  	--margin: 1rem;
+  	--gap: 1.25rem;
+  	--radius: 0.75rem;
 }
 
 /* CSS Reset */
@@ -50,7 +50,7 @@ a {
 }
 
 .card {
-	max-width: 318px;
+	max-width: 19.875rem;
 	margin: var(--margin) auto;
 	background-color: var(--white);
 	border-radius: var(--radius);
@@ -63,11 +63,11 @@ a {
 
 .card-image {
 	width: 100%;
-	border-radius: 8px;
+	border-radius: 0.5rem;
 }
 
 .card-content {
-	padding: 0 6px;
+	padding: 0 0.375rem;
 	margin-top: var(--gap);
 }
 
@@ -79,7 +79,7 @@ a {
 }
 
 .card-content p {
-	padding: 0 6px;
+	padding: 0 0.375rem;
 	margin: var(--gap) auto;
 	color: var(--slate-500);
 }
