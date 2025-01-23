@@ -14,3 +14,6 @@ Below is a list of the challenges I’ve completed along with their completion d
 - **[Challenge 4: QR Code Component](#)** — Completed on **January 15, 2025**
 - **[Challenge 5: NFT Preview Card Component](#)** — Completed on **January 18, 2025**
 - **[Challenge 6: Product Preview Card Component](#)** — Completed on **January 19, 2025**
+- **[Challenge 7: Single Price Component](#)** — Completed on **January 21, 2025**
+- **[Challenge 8: Profile Card Component](#)** — Completed on **January 22, 2025**
+- **[Challenge 9: Intro with Signup Form Component](#)** — Completed on **January 23, 2025**
