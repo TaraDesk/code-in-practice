@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="app/style.css">
+</head>
+<body>
+  <main>
+    <section class="heroes">
+      <header class="header">
+        <img class="logo" src="images/logo.svg" alt="Base Apparel">
+      </header>
+      <div class="banner">
+        <picture class="banner-image">
+          <source srcset="images/hero-desktop.jpg" media="(min-width: 820px)">
+          <img src="images/hero-mobile.jpg" alt="Image for hero section">
+        </picture>
+      </div>
+      <div class="content">
+        <h1 class="title">We're <span>coming soon</span></h1>
+
+        <p class="description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+        <form class="subscribe-form" novalidate>
+          <input class="email-input" type="email" placeholder="Email Address" required>
+          <span class="error-icon"></span>
+          <button type="submit" class="subscribe">
+            <img src="images/icon-arrow.svg" alt="Right Arrow for button">
+          </button>
+        </form>
+
+        <p class="msg"></p>
+      </div>
+    </section>
+    
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Perahim Tara</a>.
+      </p>
+    </footer>
+  </main>
+
+  <script src="app/script.js"></script>
+</body>
+</html>

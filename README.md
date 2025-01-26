@@ -17,3 +17,6 @@ Below is a list of the challenges I’ve completed along with their completion d
 - **[Challenge 7: Single Price Component](#)** — Completed on **January 21, 2025**
 - **[Challenge 8: Profile Card Component](#)** — Completed on **January 22, 2025**
 - **[Challenge 9: Intro with Signup Form Component](#)** — Completed on **January 23, 2025**
+- **[Challenge 10: Four Card Feature Section](#)** — Completed on **January 24, 2025**
+- **[Challenge 11: Base Apparel Section](#)** — Completed on **January 25, 2025**
+- **[Challenge 12: Interactive Rating Component](#)** — Completed on **January 26, 2025**

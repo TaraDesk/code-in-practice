@@ -1,0 +1,269 @@
+:root {
+	/* Primary Colors */
+	--orange: hsl(25, 97%, 53%);
+
+  	/* Neutral Colors */
+	--white: hsl(0, 0%, 100%);
+	--lightGrey: hsl(217, 12%, 63%);
+	--darkBlue: hsl(213, 19%, 18%);
+	--veryDarkBlue: hsl(216, 12%, 8%);
+	
+	/* Font Size */
+  	--font-size: 0.938rem;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+ 	margin: 0;
+  	padding: 0;
+  	border: 0;
+}
+
+html {
+  	line-height: 1.0;
+  	font-size: 100%;
+  	font-family: Overpass, sans-serif;
+}
+
+body {
+	font-size: var(--font-size);
+	background-color: var(--veryDarkBlue);
+	color: var(--white);
+}
+
+a {
+  	text-decoration: none;
+  	color: inherit;
+}
+
+/* Util Class */
+.title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: -1%;
+}
+
+.description {
+	color: var(--lightGrey);
+	line-height: 1.4;
+	letter-spacing: -3%;
+	margin-top: 1rem;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 9.688rem auto;
+}
+
+.rating-card,
+.thanks-card {
+	background-color: var(--darkBlue);
+	margin-bottom: 1rem;
+	width: 20.25rem;
+	border-radius: 0.5rem;
+}
+
+.rating-card {
+	padding: 1.5rem;
+}
+
+.star-icon {
+	padding: 0.75rem;
+	background-color: hsl(213, 19%, 22%);
+	border-radius: 50%;
+}
+
+.descriptions h2 {
+	margin-top: 1.5rem;
+}
+
+.ratings {
+	display: flex;
+	justify-content: space-between;
+	margin: 1.5rem auto;
+}
+
+.rate-wrapper {
+    position: relative;
+    width: 2.625rem;
+    height: 2.625rem;
+    display: inline-block;
+}
+
+.rate-button {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.custom-radio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 22%);
+    transition: all ease-in-out 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rate {
+    color: var(--lightGrey);
+    font-weight: bold;
+    transition: all ease-in-out 300ms;
+    pointer-events: none;
+}
+
+.rate-button:checked ~ .custom-radio {
+    background-color: var(--white); 
+}
+
+.rate-button:hover ~ .custom-radio {
+	background-color: var(--orange);
+}
+
+.rate-button:hover ~ .custom-radio .rate {
+    color: var(--darkBlue);
+}
+
+.rate-button:checked ~ .custom-radio .rate {
+    color: var(--darkBlue);
+}
+
+.rating-form button {
+	background-color: var(--orange);
+	color: var(--darkBlue);
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 10%;
+    transition: all ease-in-out 300ms;
+	cursor: pointer;
+}
+
+.rating-form button:hover {
+	background-color: var(--white);
+}
+
+.thanks-card {
+	display: none;
+	padding: 2.438rem 1.5rem;
+	text-align: center;
+}
+
+.thanks-illustration {
+	width: 9.188rem;
+	height: 6.125rem;
+}
+
+.feedback-rate {
+	width: 10.625rem;
+	font-size: 0.875rem;
+	padding: 0.625rem 0;
+	border-radius: 2rem;
+	background-color: hsl(213, 19%, 22%);
+	text-align: center;
+	margin: 1.25rem auto 0 auto;
+
+	color: var(--orange);
+}
+
+.thanks-card h2 {
+	margin-top: 1.25rem;
+}
+
+/* Attribution Section */
+.attribution {
+	text-align: center;
+	font-size: 0.688rem; 
+  	color: var(--white);
+}
+
+.attribution a { 
+	color: var(--orange); 
+}
+
+@media (min-width: 620px) {
+	main {
+		justify-content: center;
+		margin: auto;
+	}
+
+	.rating-card,
+	.thanks-card {
+		margin-bottom: 2rem;
+		width: 25.5rem;
+		border-radius: 1.75rem;
+	}
+
+	.rating-card {
+		padding: 2rem;
+	}
+
+	.star-icon {
+		padding: 1rem;
+	}
+
+	.descriptions h2 {
+		margin-top: 2.625rem;
+	}
+
+	.title {
+		font-size: 1.75rem;
+	}
+
+	.description {
+		font-size: 1rem;
+	}
+
+	.ratings {
+		margin: 1.625rem auto 0 auto;
+	}
+
+	.rate-wrapper {
+    	width: 3rem;
+    	height: 3rem;
+	}
+
+	.rating-form button {
+		margin-top: 2rem;
+	}
+
+	.thanks-card {
+		padding: 2.875rem 2rem;
+	}
+
+	.thanks-illustration {
+		width: auto;
+		height: auto;
+	}
+
+	.feedback-rate {
+		width: 196px;
+		letter-spacing: 3%;
+		margin: 2rem auto 0 auto;
+	}
+
+	.thanks-card h2 {
+		margin-top: 2.5rem;
+	}
+
+	.thanks-card .description {
+		letter-spacing: -2%;
+	}
+}
