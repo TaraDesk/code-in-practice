@@ -37,7 +37,7 @@ html {
 
 body {
 	font-size: var(--font-size);
-	color: var(--stone-900);
+	color: var(--stone-600);
 	background-color: var(--stone-100);
 }
 
@@ -97,6 +97,7 @@ ul li::before {
 
 .semi-bold {
 	font-weight: var(--font-semiBold);
+	color: var(--stone-900);
 }
 
 .label {
@@ -167,7 +168,7 @@ main {
 }
 
 .nutrition-value {
-	color: var(--rose-800);
+	color: var(--brown-800);
 }
 
 /* Attribution Section */
