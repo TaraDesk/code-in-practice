@@ -1,0 +1,169 @@
+:root {
+  	/* Colors */
+  	--yellow: hsl(47, 88%, 63%);
+  	--white: hsl(0, 0%, 100%);
+	--gray-500: hsl(0, 0%, 42%);
+	--gray-950: hsl(0, 0%, 7%);
+
+	/* Font Size */
+  	--font-size: 1rem;
+
+	/* Font Weight */
+	--font-md: 500;
+	--font-xb: 800;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+ 	margin: 0;
+  	padding: 0;
+  	border: 0;
+}
+
+html {
+  	line-height: 1.5;
+  	font-size: 100%;
+  	font-family: Figtree, sans-serif;
+}
+
+body {
+	font-size: var(--font-size);
+	font-weight: var(--font-md);
+	background-color: var(--yellow);
+	color: var(--gray-950);
+}
+
+a {
+  	text-decoration: none;
+  	color: inherit;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.blog-preview {
+	max-width: 20.438rem;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+	background-color: var(--white);
+	border: 0.063rem solid var(--gray-950);
+	border-radius: 1.25rem;
+	box-shadow: 0.5rem 0.5rem 0 0 black;
+}
+
+.banner {
+	width: 100%;
+	height: 12.5rem;
+	border-radius: 0.625rem;
+	background: url('../images/illustration-article.svg');
+	background-position: top left -1.875rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-top: 1.5rem;
+}
+
+.badge {
+	width: 4.563rem;
+	background-color: var(--yellow);
+	border-radius: 0.25rem;
+	padding: 0.25rem 0.75rem;
+}
+
+.badge span {
+	font-weight: var(--font-xb);
+	font-size: 0.75rem;
+}
+
+.date {
+	font-size: 0.75rem;
+}
+
+.title {
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: var(--font-xb);
+	transition: color ease-in-out 300ms;
+}
+
+.title:hover {
+	color: var(--yellow);
+	cursor: pointer;
+}
+
+.description {
+	font-size: 0.875rem;
+	color: var(--gray-500);
+}
+
+.author {
+	margin-top: 1.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.author-avatar {
+	width: 2rem;
+	height: 2rem;
+}
+
+.author-name {
+	font-size: 0.875rem;
+	font-weight: var(--font-xb);
+}
+
+/* Attribution Section */
+.attribution {
+	text-align: center;
+	font-size: 0.688rem; 
+  	color: var(--white);
+}
+
+.attribution a { 
+	color: var(--gray-500); 
+}
+
+@media (min-width: 620px) {
+	.blog-preview {
+		max-width: 24rem;
+	}
+
+	.banner {
+		background-position: top left;
+	}
+
+	.badge {
+		width: 5.125rem;
+	}
+
+	.badge span {
+		font-size: 0.875rem;
+	}
+
+	.date {
+		font-size: 0.875rem;
+	}
+
+	.title {
+		font-size: 1.5rem;
+	}
+
+	.description {
+		font-size: var(--font-size);
+	}
+}

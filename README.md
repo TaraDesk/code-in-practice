@@ -20,3 +20,15 @@ Below is a list of the challenges I’ve completed along with their completion d
 - **[Challenge 10: Four Card Feature Section](#)** — Completed on **January 24, 2025**
 - **[Challenge 11: Base Apparel Section](#)** — Completed on **January 25, 2025**
 - **[Challenge 12: Interactive Rating Component](#)** — Completed on **January 26, 2025**
+- **[Challenge 13: Blog Preview Card](#)** — Completed on **January 28, 2025**
+- **[Challenge 14: Recipe Page](#)** — Completed on **February 2, 2025**
+- **[Challenge 15: Result Summary Component](#)** — Completed on **February 2, 2025**
+- **[Challenge 16: Social Links Profile](#)** — Completed on **February 2, 2025**
+
+## Ongoing Projects
+
+Below is a list of the projects I’m currently working on:
+
+- **[Challenge 17: Tip Calculator App](#)** — Completed on **February 0, 2025**
+- **[Challenge 18: Notifications Page](#)** — Completed on **February 0, 2025**
+- **[Challenge 19: News Homepage](#)** — Completed on **February 0, 2025**

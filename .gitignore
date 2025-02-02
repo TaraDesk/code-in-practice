@@ -1,0 +1,7 @@
+# Or ignore the entire SCSS folder
+app/scss/
+
+# Ignore other generated or unnecessary files
+node_modules/
+dist/
+.env
